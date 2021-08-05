@@ -1,4 +1,3 @@
-import praw
 import pandas as pd
 import json
 # from chatterbot import ChatBot
