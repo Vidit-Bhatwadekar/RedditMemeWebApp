@@ -1,4 +1,4 @@
-ChatterBot==1.0.8
+
 pandas==1.0.3
 praw==7.4.0
 streamlit==0.85.1
