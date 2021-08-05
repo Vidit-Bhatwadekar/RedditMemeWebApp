@@ -33,8 +33,3 @@ if True:
     st.text_area("Bot:", value=bot.get_response(user_input), height=200, max_chars=None, key=None)
 else:
     st.text_area("Bot:", value="Please start the bot by clicking sidebar button", height=200, max_chars=None, key=None)
-
-# while True:
-#     request = st.text_input('You: ')
-#     response = bot.get_response(request)
-#     st.write('Bot: ' + str(response))
