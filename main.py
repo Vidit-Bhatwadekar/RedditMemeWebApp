@@ -10,9 +10,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.markdown('''
-Refresh page for new meme and Quotation. The author of this page does not endorse any of the sentiments expressed in the quotes or memes - they are randomly selected
-''')
+
 
 st.markdown('''<style> 
 ul {
@@ -58,6 +56,9 @@ st.title("r/okbr MEme funtime")
 st.markdown("""
 ### okbudy time for todays mem
 
+Refresh page for new meme and Quotation. 
+
+The author of this page does not endorse any of the sentiments expressed in the quotes or memes - they are randomly selected
 
 """)
 
