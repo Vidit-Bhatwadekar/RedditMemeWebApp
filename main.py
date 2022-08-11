@@ -4,6 +4,12 @@ import json
 # from chatterbot.trainers import ListTrainer
 import streamlit as st
 
+st.set_page_config(
+    page_title="Okbuddy get ready for some MEMSS",
+    page_icon= random.choice(["👨‍💻", "🐬", "🐵", "😤", "😜", "🙆‍♀️"]),
+    layout=wide
+)
+
 st.markdown('''<style> 
 ul {
     padding-left: 1.5rem;
