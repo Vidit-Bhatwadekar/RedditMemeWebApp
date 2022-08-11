@@ -1,5 +1,4 @@
 import pandas as pd
-import json
 # from chatterbot import ChatBot
 # from chatterbot.trainers import ListTrainer
 import streamlit as st
@@ -9,8 +8,6 @@ st.set_page_config(
     page_icon= "😜",
     layout="wide"
 )
-
-
 
 st.markdown('''<style> 
 ul {
@@ -54,13 +51,14 @@ OKBR_df = OKBR_df.rename(columns={'Unnamed: 0':'Number', '0': 'Quote'})
 st.title("r/okbr MEme funtime")
 
 st.markdown("""
-### okbudy time for todays mem
+## okbudy time for todays mem
 
-Refresh page for new meme and Quotation. 
+#### Refresh page for new meme and quotation. 
 
-The author of this page does not endorse any of the sentiments expressed in the quotes or memes - they are randomly selected
+#### The author of this page does not endorse the sentiments expressed in the memes or quotions - they are randomly selected.
 
 """)
+
 
 
 if True:
@@ -69,6 +67,5 @@ if True:
 
     """.format('"' + OKBR_url.sample()['URL'].iloc[0] + '"')
 
-    st.markdown("**Quotation: **" + OKBR_df.sample()['Quote'].iloc[0])
+    st.markdown(OKBR_df.sample()['Quote'].iloc[0])
     st.markdown(a, unsafe_allow_html=True)
-
