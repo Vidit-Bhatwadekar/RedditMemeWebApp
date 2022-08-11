@@ -51,11 +51,11 @@ OKBR_df = OKBR_df.rename(columns={'Unnamed: 0':'Number', '0': 'Quote'})
 st.title("r/okbr MEme funtime")
 
 st.markdown("""
-## okbudy time for todays mem
+### okbudy time for todays mem
 
-#### Refresh page for new meme and quotation. 
+Refresh page for new meme and quotation. 
 
-#### The author of this page does not endorse the sentiments expressed in the memes or quotions - they are randomly selected.
+The author of this page does not endorse the sentiments expressed in the memes or quotions - they are randomly selected.
 
 """)
 
