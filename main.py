@@ -10,6 +10,10 @@ st.set_page_config(
     layout="wide"
 )
 
+st.markdown('''
+Refresh page for new meme and Quotation. The author of this page does not endorse any of the sentiments expressed in the quotes or memes - they are randomly selected
+''')
+
 st.markdown('''<style> 
 ul {
     padding-left: 1.5rem;
@@ -64,5 +68,20 @@ if True:
 
     """.format('"' + OKBR_url.sample()['URL'].iloc[0] + '"')
 
-    st.markdown(OKBR_df.sample()['Quote'].iloc[0])
+    st.markdown("Quotation:" + OKBR_df.sample()['Quote'].iloc[0])
     st.markdown(a, unsafe_allow_html=True)
+
+with st.container():
+    for i in range(3):
+        st.write("##")
+    st.write("---")
+    col1, col2 = st.columns(2)
+    with col1:
+        st.write(
+            """
+            The author of this page does not endorse any of the sentiments expressed in the above quotations and memes
+            """
+        )
+    with col2:
+        st.markdown("<p style='text-align: right;'>Made in 2022 with Python, Pandas, Streamlit. Deployed using Heroku</p>", unsafe_allow_html=True)
+    st.write("---")
