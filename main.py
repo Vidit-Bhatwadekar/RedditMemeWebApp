@@ -4,6 +4,35 @@ import json
 # from chatterbot.trainers import ListTrainer
 import streamlit as st
 
+st.markdown('''<style> 
+ul {
+    padding-left: 1.5rem;
+  }
+
+h1 {
+    text-align:center;
+}
+
+h5 {
+    text-align:center;
+}
+
+img {
+    margin-left: 17.2rem;
+}
+
+#MainMenu {
+    visibility: hidden;
+}
+footer {
+    visibility: hidden;
+}
+header {
+    visibility: hidden;
+}')
+</style>
+''', unsafe_allow_html=True)
+
 
 
 OKBR_df = pd.read_csv('OKBR.csv')
@@ -22,26 +51,6 @@ st.markdown("""
 
 """)
 
-
-
-
-
-
-
-# bot = ChatBot('Yahoo')
-
-# ind = 1
-# if st.sidebar.button('Initialize chatbot'):
-#     # trainer = ListTrainer(bot)
-#     # trainer.train(OKBR_ls)
-#     st.title("Your bot is ready to talk to you")
-#     ind = ind + 1
-
-# def get_text():
-#     input_text = st.text_input("You: ","So, what's in your mind")
-#     return input_text
-#
-# user_input = get_text()
 
 if True:
     a = """
