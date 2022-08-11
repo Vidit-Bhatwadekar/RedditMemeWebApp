@@ -6,8 +6,8 @@ import streamlit as st
 
 st.set_page_config(
     page_title="Okbuddy get ready for some MEMSS",
-    page_icon= random.choice(["👨‍💻", "🐬", "🐵", "😤", "😜", "🙆‍♀️"]),
-    layout=wide
+    page_icon= "😜",
+    layout="wide"
 )
 
 st.markdown('''<style> 
