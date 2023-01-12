@@ -48,14 +48,14 @@ OKBR_ls = OKBR_arr.tolist()
 OKBR_url = OKBR_url.rename(columns={'Unnamed: 0':'Number', '0': 'URL'})
 OKBR_df = OKBR_df.rename(columns={'Unnamed: 0':'Number', '0': 'Quote'})
 
-st.title("r/okbr MEme funtime")
+st.title("Reddit Memes")
 
 st.markdown("""
-### okbudy time for todays mem
+### Time for today's Meme
 
 Refresh page for new meme and quotation. 
 
-The author of this page does not endorse the sentiments expressed in the memes or quotions - they are randomly selected.
+The author of this page does not endorse the sentiments expressed in the memes or quotions - they are randomly selected from Reddit. Apologies if offensive.
 
 """)
 
